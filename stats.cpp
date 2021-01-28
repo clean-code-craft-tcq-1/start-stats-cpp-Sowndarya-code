@@ -14,4 +14,10 @@ Statistics::Stats Statistics::Stats::ComputeStatistics(const std::vector<float>&
 
 void Statistics::StatsAlerter::checkAndAlert(std::vector<float> S3)
 {
+    m_max = *max_element(S3.begin(),S3.end());
+    if(m_max > m_thresh)
+    {
+        *m_Alerters[0] = true;
+        *m_Alerters[1] = true;        
+    }
 }
