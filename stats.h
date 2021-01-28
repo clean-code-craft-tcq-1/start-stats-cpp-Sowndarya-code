@@ -12,11 +12,11 @@ namespace Statistics {
     class EmailAlert 
     {
         public:
-        boolean emailSent;
+        bool emailSent;
     };
     class LEDAlert
     {
         public:
-        boolean ledGlows;
+        bool ledGlows;
     };
 }
