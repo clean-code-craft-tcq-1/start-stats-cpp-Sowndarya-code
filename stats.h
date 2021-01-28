@@ -34,7 +34,7 @@ namespace Statistics {
         StatsAlerter (float f_max_thres, std::vector<IAlerter*> &f_Alerters) : m_thresh(f_max_thres),m_Alerters(f_Alerters) {}
         //std::vector<float> S3;
         void checkAndAlert(std::vector<float> S3) override;
-        float m_thresh;
+        float m_thresh,m_max;
        std::vector<IAlerter*> &m_Alerters;
        
     };
