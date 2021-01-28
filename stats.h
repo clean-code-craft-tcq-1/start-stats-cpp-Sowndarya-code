@@ -12,6 +12,7 @@ namespace Statistics {
     
     class IAlerter
     {
+        public:
         virtual void checkAndAlert(std::vector<float>) = 0;
         bool emailSent,ledGlows;
     };
