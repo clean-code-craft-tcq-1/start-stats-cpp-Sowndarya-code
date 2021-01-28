@@ -18,6 +18,6 @@ void Statistics::StatsAlerter::checkAndAlert(std::vector<float> S3)
     if(m_max > m_thresh)
     {
         m_Alerters[0]->emailSent = true;
-        *m_Alerters[1] = true;        
+        m_Alerters[1]->ledGlows = true;        
     }
 }
