@@ -9,6 +9,12 @@ namespace Statistics {
         float average,min,max;
         float sum = 0.0F;
     };
+    
+    class IAlerter
+    {
+        virtual void checkAndAlert(std::vector<float>) = 0;
+    };
+    
     class EmailAlert : public IAlerter
     {
         public:
@@ -19,10 +25,7 @@ namespace Statistics {
         public:
         bool ledGlows;
     };
-    class IAlerter
-    {
-        virtual void checkAndAlert(std::vector<float>) = 0;
-    };
+
     class StatsAlerter : public IAlerter
     {
         public:
