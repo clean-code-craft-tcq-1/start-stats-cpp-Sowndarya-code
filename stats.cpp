@@ -1,5 +1,4 @@
 #include "stats.h"
-using namespace std;
 Statistics::Stats Statistics::Stats::ComputeStatistics(const std::vector<float>& S2) 
 {
     for(int i=0; i<S2.size(); i++)
