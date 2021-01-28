@@ -29,7 +29,7 @@ TEST_CASE("raises alerts when max is greater than threshold") {
     std::vector<Statistics::IAlerter*> alerters = {&emailAlert, &ledAlert};
     
     const float maxThreshold = 10.2;
-    StatsAlerter statsAlerter(maxThreshold, alerters);
+    Statistics::StatsAlerter statsAlerter(maxThreshold, alerters);
     statsAlerter.checkAndAlert({99.8, 34.2, 4.5, 6.7});
 
     REQUIRE(emailAlert.emailSent);
