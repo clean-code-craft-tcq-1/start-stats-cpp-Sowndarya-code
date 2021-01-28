@@ -8,5 +8,6 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& S2) {
     average = sum/S2.size();
     min = *min_element(S2.begin(),S2.end());
     max = *max_element(S2.begin(),S2.end());
+    return *this;
     //Implement statistics here
 }
