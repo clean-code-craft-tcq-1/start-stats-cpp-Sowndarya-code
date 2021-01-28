@@ -11,3 +11,7 @@ Statistics::Stats Statistics::Stats::ComputeStatistics(const std::vector<float>&
     return *this;
     //Implement statistics here
 }
+
+void Statistics::StatsAlerter::checkAndAlert(std::vector<float> S3)
+{
+}
