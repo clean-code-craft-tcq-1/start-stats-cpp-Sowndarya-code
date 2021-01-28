@@ -30,7 +30,7 @@ namespace Statistics {
         //std::vector<float> S3;
         void checkAndAlert(std::vector<float> S3) override;
         float m_thresh;
-       std::vector<IAlerter*> *m_Alerters;
+       std::vector<IAlerter*> &m_Alerters;
        
     };
 }
