@@ -25,6 +25,7 @@ namespace Statistics {
     {
         public:
         bool ledGlows;
+        void checkAndAlert(std::vector<float>) {};
     };
 
     class StatsAlerter : public IAlerter
