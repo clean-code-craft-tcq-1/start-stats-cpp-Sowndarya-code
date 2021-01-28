@@ -9,12 +9,12 @@ namespace Statistics {
         float average,min,max;
         float sum = 0.0F;
     };
-    class EmailAlert 
+    class EmailAlert : public IAlerter
     {
         public:
         bool emailSent;
     };
-    class LEDAlert
+    class LEDAlert : public IAlerter
     {
         public:
         bool ledGlows;
