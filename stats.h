@@ -9,4 +9,14 @@ namespace Statistics {
         float average,min,max;
         float sum = 0.0F;
     };
+    class EmailAlert 
+    {
+        public:
+        boolean emailSent;
+    };
+    class LEDAlert
+    {
+        public:
+        boolean ledGlows;
+    };
 }
